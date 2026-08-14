@@ -1,0 +1,22 @@
+source_doc_id,entity,entity_type,source,method,confidence,evidence
+166170,Quốc hội,CoQuan,content_clean,gemini,1.0,Quốc hội ban hành Luật Các tổ chức tín dụng.
+166170,Tổ chức tín dụng,DoiTuongApDung,content_clean,gemini,1.0,1. Tổ chức tín dụng.
+166170,Chi nhánh ngân hàng nước ngoài,DoiTuongApDung,content_clean,gemini,1.0,2. Chi nhánh ngân hàng nước ngoài.
+166170,"Văn phòng đại diện tại Việt Nam của tổ chức tín dụng nước ngoài, tổ chức nước ngoài khác có hoạt động ngân hàng",DoiTuongApDung,content_clean,gemini,1.0,"3. Văn phòng đại diện tại Việt Nam của tổ chức tín dụng nước ngoài, tổ chức nước ngoài khác có hoạt động ngân hàng (sau đây gọi là văn phòng đại diện nước ngoài)."
+166170,"Tổ chức mà Nhà nước sở hữu 100% vốn điều lệ có chức năng mua, bán, xử lý nợ",DoiTuongApDung,content_clean,gemini,1.0,"4. Tổ chức mà Nhà nước sở hữu 100% vốn điều lệ có chức năng mua, bán, xử lý nợ (sau đây gọi là tổ chức mua bán, xử lý nợ)."
+166170,"Cơ quan, tổ chức, cá nhân có liên quan đến việc thành lập, tổ chức, hoạt động, can thiệp sớm, kiểm soát đặc biệt, tổ chức lại, giải thể, phá sản tổ chức tín dụng; việc thành lập, tổ chức, hoạt động, can thiệp sớm, giải thể, chấm dứt hoạt động của chi nhánh ngân hàng nước ngoài; việc thành lập, hoạt động của văn phòng đại diện nước ngoài; việc xử lý nợ xấu, tài sản bảo đảm của khoản nợ xấu của tổ chức tín dụng, chi nhánh ngân hàng nước ngoài, tổ chức mua bán, xử lý nợ",DoiTuongApDung,content_clean,gemini,1.0,"5. Cơ quan, tổ chức, cá nhân có liên quan đến việc thành lập, tổ chức, hoạt động, can thiệp sớm, kiểm soát đặc biệt, tổ chức lại, giải thể, phá sản tổ chức tín dụng; việc thành lập, tổ chức, hoạt động, can thiệp sớm, giải thể, chấm dứt hoạt động của chi nhánh ngân hàng nước ngoài; việc thành lập, hoạt động của văn phòng đại diện nước ngoài; việc xử lý nợ xấu, tài sản bảo đảm của khoản nợ xấu của tổ chức tín dụng, chi nhánh ngân hàng nước ngoài, tổ chức mua bán, xử lý nợ."
+166170,Tín dụng,LinhVuc,content_clean,gemini,0.9,LUẬT CÁC TỔ CHỨC TÍN DỤNG
+166170,Ngân hàng,LinhVuc,content_clean,gemini,0.9,tổ chức nước ngoài khác có hoạt động ngân hàng
+112025,Chính phủ,CoQuan,content_clean,gemini,1.0,CHÍNH PHỦ CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+112025,Doanh nghiệp bảo hiểm,DoiTuongApDung,content_clean,gemini,1.0,Nghị định này áp dụng đối với: a) Doanh nghiệp bảo hiểm;
+112025,Chi nhánh nước ngoài,DoiTuongApDung,content_clean,gemini,1.0,b) Chi nhánh nước ngoài;
+112025,"Doanh nghiệp môi giới bảo hiểm, đại lý bảo hiểm",DoiTuongApDung,content_clean,gemini,1.0,"c) Doanh nghiệp môi giới bảo hiểm, đại lý bảo hiểm;"
+112025,"Các tổ chức, cá nhân khác có liên quan",DoiTuongApDung,content_clean,gemini,1.0,"d) Các tổ chức, cá nhân khác có liên quan."
+112025,Kinh doanh bảo hiểm,LinhVuc,content_clean,gemini,1.0,"NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT THI HÀNH LUẬT KINH DOANH BẢO HIỂM VÀ LUẬT SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA LUẬT KINH DOANH BẢO HIỂM"
+38128,Ngân hàng Nhà nước Việt Nam,CoQuan,content_clean,gemini,1.0,NGÂN HÀNG NHÀ NƯỚC VIỆT NAM
+38128,Thống đốc Ngân hàng Nhà nước Việt Nam,NguoiKy,content_clean,gemini,0.9,"Thống đốc Ngân hàng Nhà nước Việt Nam ban hành Thông tư quy định việc thiết kế mẫu tiền, chế bản và quản lý in, đúc tiền Việt Nam."
+38128,Các đơn vị có liên quan thuộc Ngân hàng Nhà nước,DoiTuongApDung,content_clean,gemini,1.0,1. Các đơn vị có liên quan thuộc Ngân hàng Nhà nước.
+38128,Nhà máy in tiền Quốc gia,DoiTuongApDung,content_clean,gemini,1.0,2. Nhà máy in tiền Quốc gia.
+38128,"Tổ chức, cá nhân khác có liên quan đến công việc thiết kế mẫu tiền, chế tạo bản in, khuôn đúc và in, đúc tiền",DoiTuongApDung,content_clean,gemini,1.0,"3. Tổ chức, cá nhân khác có liên quan đến công việc thiết kế mẫu tiền, chế tạo bản in, khuôn đúc và in, đúc tiền."
+38128,Phát hành tiền,LinhVuc,content_clean,gemini,0.9,Căn cứ Nghị định số 40/2012/NĐ-CP ngày 02/5/2012 của Chính phủ về nghiệp vụ phát hành tiền
+38128,"Thiết kế mẫu tiền, chế bản và quản lý in, đúc tiền",LinhVuc,content_clean,gemini,0.9,"THÔNG TƯ Q uy định việc thiết kế mẫu tiền, chế bản và quản lý in, đúc tiền Việt Nam"
