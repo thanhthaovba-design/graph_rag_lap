@@ -11,7 +11,7 @@ Xây dựng một hệ thống Graph RAG (Truy vấn tăng cường bằng đồ
 - Kết nối tới thực thể Neo4j cục bộ bằng các thông tin đã được thiết lập ở Bài thực hành 1:
   - **Connection URL**: `neo4j://localhost:7687` hoặc `bolt://localhost:7687`
   - **Database Name**: `kb-hops`
-  - **Credentials**: `neo4j / abcd1234` (hoặc mật khẩu của bạn)
+  - **Credentials**: `neo4j / abcd1234` (hoặc mật khẩu của bạn)neo4j://127.0.0.1:7687/abcd1234
 
 ### **Bước 2: Truy vấn Vector và Mối quan hệ Đa bước (Multi-hop)**
 - Xây dựng một hàm tìm kiếm ngữ cảnh:

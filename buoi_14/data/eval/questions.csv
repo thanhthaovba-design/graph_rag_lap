@@ -1,0 +1,4 @@
+question_id,question,expected_chunk_id,query_type,note
+q1,Ai có thẩm quyền phê duyệt giao dịch vượt hạn mức?,44209_chunk_1,SEMANTIC,Can be in multiple chunks but this is a semantic question
+q2,Quy định Thông tư số 01/2014/TT-NHNN nói gì về tiền mặt?,44209_chunk_2,EXACT_KEYWORD,Contains specific document number
+q3,Trách nhiệm của tổ chức tín dụng trong việc bảo quản tài sản?,44209_chunk_2,MIXED,Contains keywords and semantic meaning
