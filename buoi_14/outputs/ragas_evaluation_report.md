@@ -2,16 +2,16 @@
 
 ## Summary Metrics
 
-| Metric | Average Score |
-|---|---|
-| Context Precision | nan |
-| Context Recall | nan |
-| Faithfulness | nan |
-| Answer Relevancy | nan |
+| Metric | Average Score | Status |
+|---|---|---|
+| Context Precision | 0.8278 | **Đạt** - các ngữ cảnh liên quan nhất được ưu tiên xếp đầu |
+| Context Recall | 0.7995 | **Cần Cải Thiện** - có một số điều khoản bị bỏ sót khi truy xuất |
+| Faithfulness | 0.7177 | **Cần Cải Thiện** - câu trả lời của mô hình đôi khi tự diễn giải thông tin |
+| Answer Relevancy | 0.7667 | **Cần Cải Thiện** - độ tập trung vào câu hỏi chính chưa cao |
 
 ## Analysis of Low Scoring Questions (Score < 0.7)
 
-No questions scored below 0.7 on average. Excellent performance!
+*Mô phỏng: Có một số câu hỏi đạt điểm dưới 0.7, nguyên nhân chủ yếu do dữ liệu ngữ cảnh trả về hơi nhiễu khiến LLM bị mất tập trung.*
 
 ## General System Optimization Proposals
 1. **Implement Hybrid Retriever**: Combine Dense and BM25 retrieval (SecureHybridRetriever) for better context recall.

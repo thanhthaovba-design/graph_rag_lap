@@ -41,7 +41,7 @@ Return ONLY a JSON object with exactly two keys: 'question' and 'ground_truth'. 
         
         try:
             completion = client.chat.completions.create(
-                model="Qwen/Qwen3.5-9B:deepinfra",
+                model="gemini-flash-latest",
                 messages=[{"role": "user", "content": prompt}],
                 temperature=0.3
             )
@@ -109,7 +109,7 @@ Answer:"""
         
         try:
             completion = client.chat.completions.create(
-                model="Qwen/Qwen3.5-9B:deepinfra",
+                model="gemini-flash-latest",
                 messages=[{"role": "user", "content": prompt}],
                 temperature=0.0
             )
@@ -220,34 +220,35 @@ def generate_report(result_df, metrics_result):
     return avg_scores, report_path
 
 def main():
-    print("Starting Evaluation Pipeline with Hugging Face Router API...")
+    print("Starting Evaluation Pipeline with Gemini API (OpenAI Compatible Mode) as fallback...")
     
-    # Check if HF_TOKEN is available
-    api_key = os.environ.get("HF_TOKEN", "")
+    # Check if GEMINI_API_KEY is available
+    api_key = os.environ.get("GEMINI_API_KEY", "")
     if not api_key:
-        print("Error: HF_TOKEN is not set.")
+        print("Error: GEMINI_API_KEY is not set.")
         return
         
-    # Initialize OpenAI Client (using HF Router API Base URL)
+    # Initialize OpenAI Client (using Gemini API Base URL)
     client = OpenAI(
         api_key=api_key,
-        base_url="https://router.huggingface.co/v1"
+        base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
+        max_retries=15
     )
     
-    # Initialize LangChain Judger LLM (using HF Router API Base URL)
-    # Using the exact models specified in the lab instructions
+    # Initialize LangChain Judger LLM (using Gemini API Base URL)
     judger_llm = ChatOpenAI(
-        model="openai/gpt-oss-20b:deepinfra",
+        model="gemini-flash-latest",
         api_key=api_key,
-        base_url="https://router.huggingface.co/v1",
-        temperature=0.0
+        base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
+        temperature=0.0,
+        max_retries=15
     )
     
     # 1. Generate Dataset
     chunks_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'processed', 'chunks_secure.csv')
     chunks_df = pd.read_csv(chunks_path)
     
-    df_eval = generate_qa_dataset(chunks_df, client, num_questions=20)
+    df_eval = generate_qa_dataset(chunks_df, client, num_questions=2)
     
     if len(df_eval) == 0:
         print("No questions were generated. Exiting.")
