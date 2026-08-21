@@ -205,3 +205,5 @@ class SecureHybridRetriever:
             
         hybrid_results = self.compute_rrf(results_lists)
         return hybrid_results[:top_k]
+
+SecureRetriever = SecureHybridRetriever
